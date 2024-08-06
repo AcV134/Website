@@ -6,8 +6,8 @@ for (let i = 0; i < 8; i++) {
     let cards = document.createElement('article');
     cards.className = 'cards';
     let content =`
-        <h1 class="cards-title">Card ${i}</h1>
-        <p class="cards-content">This is a card.</p>
+        <h1 class="cards-title">Blog ${i}</h1>
+        <p class="cards-content">This is a short summary of a blog.</p>
         <a href="blog-${i}" class="cards-link">Read More</a>
     `;
     cards.innerHTML = content;

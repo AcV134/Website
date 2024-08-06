@@ -1,17 +1,41 @@
 console.log("loaded project.js");
 
+let project_title=[
+    "CodingWithAnirudh",
+    "We-Doodle-You",
+    "Spotify Data Analysis",
+    "Striver-SDE-Sheet",
+    "Graph"
+];
+
+let project_description=[
+    "A website for blogging and coding",
+    "Convert image into doodle",
+    "Analyzing the spotify track dataset",
+    "My solutions to the Striver SDE sheet",
+    "Ready-to-use graph module for python files"
+];
+
+let project_link=[
+    "https://github.com/AcV134/CodingWithAnirudh",
+    "https://github.com/AcV134/We-Doodle-You",
+    "https://github.com/AcV134/Spotify-Data-Analysis",
+    "https://github.com/AcV134/Striver-SDE-Sheet",
+    "https://github.com/AcV134/Graph"
+];
+
 let project_container = document.getElementsByClassName('project-container');
 
-for (let i = 0; i < 18; i++) {
+for (let i = 0; i < project_title.length; i++) {
     let cards = document.createElement('div');
     cards.className = `project`;
     cards.id = `p_${i}`;
     let content =`
     <div class="project-image"></div>
     <div class="project-content">
-        <h1>Project ${i}</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum sapiente eos ex dolore ipsam eaque, quisquam reiciendis molestias autem? Officiis vitae minus assumenda maxime aperiam ex voluptate nihil molestias!</p>
-        <a href="#" class="project-link">read more >></a>     
+        <h1>${project_title[i]}</h1>
+        <p>${project_description[i]}</p>
+        <a href="${project_link[i]}" class="project-link">read more</a>     
     </div>
     `
     cards.innerHTML = content;
