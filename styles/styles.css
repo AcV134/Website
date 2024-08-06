@@ -1,0 +1,684 @@
+/* html */
+
+:root{
+    font-size: 16px;
+    font-family: 'Prompt', sans-serif;
+    color: #ffff;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* body specifications  */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* animation specification for bg */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* title specifications  */
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* section content specification */
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* window scroll bar specifications */
+body::-webkit-scrollbar-track {
+    background: #202731;
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #F92C85;
+    border-radius: 20px;
+}
+
+/* navbar container*/
+header{
+    border-bottom: 2px solid #F92C85;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #202731;
+    padding: 0.2rem;
+    width: 99.5%;
+    margin:0px;
+    position:fixed;
+    top:0px;    
+    z-index: 1000;
+}
+
+/* navbar items container list */
+
+.navbar-nav {
+    list-style-type: none; 
+    padding: 0;             
+    margin: 0 60px 0 5px;              
+    display: flex;
+    align-items: center;   
+    justify-content: right;     
+}
+
+/* navbar items */
+.nav-item:first-child {
+    margin-right: auto;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.nav-item{
+    position: relative;
+    padding: 0.3rem;
+    border-radius: 50px;
+    border:3px solid #202731;
+    margin: 0.5rem;
+    transition: all 0.3s;
+}
+
+/* nabar items link  */
+.nav-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #5EBEC4;
+    transition: all 0.3s;
+}
+
+/* navbar item links on hover */
+.link-hover{
+    color: #FDF5DF;
+}
+
+/* navbar items on hover */
+
+.item-hover{
+    background-color: #F92C85;
+    border:3px solid #F92C85;
+    box-shadow:    10px 10px #5EBEC4;
+}
+
+/* footer */
+
+footer{
+    border-top: 2px solid #F92C85;
+    padding: 2rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #202731;
+}
+
+/* footer container  */
+
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer icons  */
+
+.icon-link{
+    margin: 0.5rem;
+    padding: 0.3rem;
+    text-decoration: none;
+}
+
+/* footer icons on hover */
+
+.hop {
+    animation: hop 0.5s;
+  }
+
+@keyframes hop {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* footer page links */
+
+.footer-link{
+    text-decoration: none;
+    color: #5EBEC4;
+    padding: 0.5rem;
+    transition: all 0.3s;
+}
+
+/* footer page links on hover */
+
+.footer-hover{
+    color: #F92C85;
+}
+
+/* footer icon specification */
+
+.fg-primary{
+    fill: #5EBEC4;
+    transition: all 0.2s;
+    stroke: #F92C85;
+    stroke-width: 7px;
+}
+
+/* pages */
+
+/* section specification */
+
+.page{
+    min-height: 100vh;
+    min-width:100wh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    scroll-margin-top: 4rem; 
+    padding: 5rem;
+    padding-top: 7rem;
+    align-items: center;
+    justify-items: center;
+}
+
+/* title section*/
+
+/* first section specification */
+
+#first{
+    color:black;
+    overflow: hidden;
+    cursor:none;
+}
+
+/* section title */
+
+.blob-title {
+    position: relative;
+    z-index: 1;
+    margin-top: 2%;
+} 
+
+/* blob svg to apply filter*/
+
+.blob-wrapper svg {
+    display: none;
+}
+
+/* blob container */
+
+.blob-container {
+    filter: url(#goo) blur(2px) ;
+    width: 100wh;
+    height: 100vh;
+}
+
+/* blob specification */
+
+.blob{
+    
+    height: 250px;
+    width: 250px;
+    background: radial-gradient(63.62% 69.52% at 100% 0%, rgba(247, 214, 98, 0.8) 0%, rgba(247, 214, 98, 0.17) 52.08%, rgba(247, 214, 98, 0) 100%), linear-gradient(208.42deg, rgb(240, 66, 42) 7.46%, rgba(240, 88, 42, 0.18) 42.58%, rgba(240, 101, 42, 0) 64.13%), radial-gradient(114.51% 122.83% at 0% -15.36%, rgb(231, 79, 106) 0%, rgba(231, 79, 106, 0.22) 66.72%, rgba(231, 79, 106, 0) 100%), linear-gradient(333.95deg, rgba(83, 208, 236, 0.85) -7.76%, rgba(83, 208, 236, 0.204) 19.67%, rgba(138, 137, 190, 0) 35.42%), radial-gradient(109.15% 148.57% at 4.46% 98.44%, rgb(27, 49, 128) 0%, rgba(27, 49, 128, 0) 100%), linear-gradient(141.57deg, rgb(78, 173, 235) 19.08%, rgba(78, 173, 235, 0) 98.72%);
+    border-radius: 7rem;
+    background-blend-mode: normal;
+    filter: blur(25px);
+    position: absolute;
+}
+
+/* individual blob specifications */
+
+.b1{
+    animation: moveVertical 30s ease infinite;
+}
+
+.b2{
+    animation: moveHorizontal 30s ease infinite;
+}
+
+.b3{
+    animation: moveClockwise 30s ease infinite;
+}
+
+.b4{
+    animation: moveAntiClockwise 30s ease infinite;
+
+}
+
+/* blob cursor specification  */
+
+.interactive {
+    height: 100px;
+    width: 100px;
+    margin-left: -43rem;
+    margin-top: -15rem;
+
+  }
+
+/* blob animation specifications */
+
+@keyframes moveHorizontal{
+    0%{
+        transform: translateX(-100%) translateY(-10%);
+    }
+    50%{
+        transform: translateX(100%) translateY(10%);
+    }
+    100%{
+        transform:translateX(-100%)translateY(-10%);
+    }
+}
+
+@keyframes moveVertical{
+    0%{
+        transform: translateY(-100%) translateX(0%);
+    }
+    50%{
+        transform: translateY(100%) translateX(-10%);
+    }
+    100%{
+        transform:translateY(-100%)translateX(10%);
+    }
+}
+
+@keyframes moveClockwise{
+    0% { 
+        transform: rotate(0deg)  
+              translateY(50%) rotate(0deg) translateX(-100%); 
+    } 
+
+    100% { 
+        transform: rotate(360deg)  
+              translateY(50%) rotate(-360deg) translateX(-100%); 
+    } 
+}
+
+@keyframes moveAntiClockwise{
+    0% { 
+        transform: rotate(0deg)  
+              translateY(-50%) rotate(0deg) translateX(50%); 
+    } 
+
+    100% { 
+        transform: rotate(-360deg)  
+              translateY(-50%) rotate(-360deg) translateX(50%); 
+    } 
+}
+
+/* about section*/
+
+/* second section specification  */
+
+#second{
+    background: linear-gradient(90deg, #ff0095, #ff9400);
+    background-size: 200% 200%;
+    animation: gradient-animation 5s ease infinite;
+
+}
+
+/* blog section*/
+
+/* third section specification */
+
+#third{
+    background-color: #010000;
+
+}
+
+/* blog container */
+
+.cards-container{
+    display:flex;
+    position: relative;
+    overflow-x:scroll;
+    width: 70%;
+    padding: 3rem;
+}
+
+/* blog container scroll bar specifications  */
+
+.cards-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.cards-container::-webkit-scrollbar-thumb {
+    background: #ff0095;
+    border-radius: 20px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+/* blog card  */
+
+.cards{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 350px;
+    min-width:200px;
+    background-color:#17141d;
+    border-radius: 20px;
+    padding:1.5rem;
+    box-shadow:-1rem 0 3rem #000;
+    transition: all 300ms ease;
+}
+
+/* blog cards ovrlap effect */
+
+.cards:not(:first-child){
+    margin-left: -130px;
+}
+
+/* blog cards after, on hover */
+
+.cards-after{
+    box-shadow:1rem 0 3rem #000;
+    transform: translateX(130px);
+}
+
+/* blog card on hover */
+
+.cards-hover{
+    transform:translateY(-1rem);
+    border:2px solid #ff0095;
+}
+
+ /* blog card link */
+
+.cards-link{
+    text-decoration:none;
+    color: inherit;
+    transition: color 0.3s;
+    margin-top: auto;
+}
+
+/* blog card link on hover */
+
+.cards-link:hover{
+    color: #ff0095;
+}
+
+/* projects section*/
+
+/* fourth section specification */
+
+#fourth{
+    background: linear-gradient(90deg, #2c00ff, #7000ff);
+    background-size: 200% 200%;
+    animation: gradient-animation 5s ease infinite;
+    overflow-x: hidden;
+}
+
+ /* project container with navigation buttons */
+
+.totalproject{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    width:100vw;
+}
+
+ /* project navigation buttons */
+
+.click{
+    display: flex;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all 300ms ease;
+    color:#FFFFFF;
+}
+
+ /* navigation button on hover */
+
+.click-hover{
+    background-color: #ff0095;
+    box-shadow: 1px 1px 3px #000;
+}
+
+ /* project card container */
+
+.project-container{
+    display: flex;
+    overflow-x:auto; 
+    max-width: 20%; 
+    padding: 3rem;
+    transition: width 300ms ease;
+    margin: 1rem;
+    padding-right: 250px;
+}
+
+  /* project card */
+
+.project{
+    position: relative;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 300px;
+    width:50px;
+    min-width: 50px;
+    background-color: #000;
+    border-radius: 20px;
+    box-shadow: 1px 1px 3px #000;
+    color:transparent;
+    transition: min-width 500ms ease,project-image 5s ease;
+    cursor: pointer;
+}
+
+ /* project card on click */
+.project-click{
+    min-width:350px;
+    color: white;
+    transition: min-width 500ms ease,color 500ms 500ms ease-in;
+
+    /* project card image */
+    .project-image{
+        height: 35%;
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        background-color: #2c00ff;
+    }
+
+    /* project card content */
+    .project-content{
+        height:65%;
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        h1{
+            font-size: 1.5rem;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        /* project card link */
+        .project-link{
+            text-decoration:none;
+            color: inherit;
+            text-indent: 3em;
+            transition: color 0.3s;
+            margin-left: 2rem;
+        }
+
+        /* project card link on hover */
+        .project-link:hover{
+            color: #ff0095;
+        }
+    }
+
+}
+
+/* project card scroll bar specifications  */
+
+.project-content::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.project-content::-webkit-scrollbar-thumb {
+    background: #ff0095;
+    border-radius: 20px;
+}
+
+.project-content::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+ /* project scroll bar specifications */
+
+.project-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.project-container::-webkit-scrollbar-thumb {
+    background: #ff0095;
+    border-radius: 20px;
+}
+
+.project-container::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#201c29,#201c29 1px,#17141d 0,#17141d);
+}
+
+
+
+/* svg waves */
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 76px;
+}
+
+.wave .shape-fill {
+    fill: #FFFFFF;
+}
+
+.wave2{
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg{
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 25rem;
+}
+
+
+/* blog content  */
+
+
+/* navbar */
+.blog-nav{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    top:0;
+    background-color: white;
+    box-shadow:0px 1px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    color:black;
+
+    /* nav item */
+    .blog-logo{
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        display: flex;
+        height: 100%;
+        font-size:1.5rem;
+        align-items: center;
+        justify-content: center;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+}
+
+.blog-total{
+    height:100vh;
+    margin: 0 20% 0 20%;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+    .blog-title{
+        height: 4rem;
+        width: auto;
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+        font-weight: 700;
+    }
+
+    .blog-content{
+        padding:5px;
+        width: auto;
+        font-size: 1.1rem;
+        line-height: 2.1rem;
+    }
+
+
+}
+
+
+
+
+
+
