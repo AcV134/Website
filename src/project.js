@@ -2,6 +2,7 @@ console.log("loaded project.js");
 
 let project_title=[
     "CodingWithAnirudh",
+    "Snake Game",
     "We-Doodle-You",
     "Spotify Data Analysis",
     "Striver-SDE-Sheet",
@@ -10,6 +11,7 @@ let project_title=[
 
 let project_description=[
     "A website for blogging and coding",
+    "A simple snake game using html,css,js",
     "Convert image into doodle",
     "Analyzing the spotify track dataset",
     "My solutions to the Striver SDE sheet",
@@ -18,6 +20,7 @@ let project_description=[
 
 let project_link=[
     "https://github.com/AcV134/CodingWithAnirudh",
+    "https://github.com/AcV134/SnakeGame/",
     "https://github.com/AcV134/We-Doodle-You",
     "https://github.com/AcV134/Spotify-Data-Analysis",
     "https://github.com/AcV134/Striver-SDE-Sheet",
