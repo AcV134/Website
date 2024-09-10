@@ -30,8 +30,6 @@ body{
     font-family: var(--ff);
     padding: 0px;
     margin: 0px;
-    height:420vh;
-    width: 100%;
 }
 
 header{
@@ -47,7 +45,7 @@ section{
     background-color: var(--bg);
     height: 130vh;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .break{
@@ -107,19 +105,20 @@ section{
         rotate: 90deg;
     }
 }
+
 .blob{
     display:flex;
     position: absolute;
-    height: clamp(20px,23vh,600px);
-    width: clamp(20px,23vh,600px);
+    height: 23vh;
+    width: 23vh;
     justify-content: space-between;
     align-items: center;
     filter: url('#blur-contrast');
 
     .blobs{
         display:flex;
-        height: clamp(10px,13vh,300px);
-        width: clamp(10px,13vh,300px);
+        height: 13vh;
+        width: 13vh;
         border-radius: 50%;
         box-shadow: var(--shadow1);
     }
@@ -133,11 +132,43 @@ section{
     }
 }
 
-
 footer{
     display:flex;
     background-color:var(--secondary-color);
     height: clamp(200px,35vh,500px);
     width: 100%;
     border-top: 2px solid var(--tertiary-color);
+}
+
+.bg-container{
+    margin-left: 30vw;
+    margin-top: 25vh;
+    position: relative;
+}
+
+.bg-blob{
+    --angle:60%;
+    position: absolute;
+    background-image: linear-gradient(135deg, var(--quaternary-color), var(--tertiary-color) 60%);
+    height: 85vh;
+    width: 85vh;
+    border-radius: 56% 44% 43% 57% / 39% 64% 36% 61%;
+    animation: spin-scale 30s infinite ease-in-out;
+}
+
+@keyframes spin-scale{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        transform: rotate(180deg) scale(1.2);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.blur{
+    filter:blur(40px);
+    opacity: 0.7;
 }
