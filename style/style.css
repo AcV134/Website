@@ -1,4 +1,4 @@
---root{
+:root{
     /* font-family */
     --ff:"DM Sans", sans-serif;
     /* colors */
@@ -17,10 +17,44 @@
      /*cards  */
     --shadow2:-4px -4px 40 rgba(var(--primary-color),0.12), 4px 4px 4 rgba(var(--secondary-color),1);
     /* background */
-    --bg:rgba(25,25,25);
+    --bg:rgb(25,25,25);
     /* image cover */
     --cover: rgba(var(--secondary-color),0.7);
 }
 
+body{
+    font-family: var(--ff);
+    padding: 0px;
+    margin: 0px;
+}
 
+header{
+    display:flex;
+    background-color:transparent;
+    height: clamp(30px,13vh,200px);
+    width: 100%;
+    border-bottom: 2px solid var(--quaternary-color);
+}
 
+section{
+    display:flex;
+    background-color: var(--bg);
+    height: clamp(800px,100vh,1000px);
+    width: clamp(800px,100%,3000px);
+    overflow-x: hidden;
+}
+
+.break{
+    height:clamp(100px,30vh,300px);
+    width:100%;
+    background-color: var(--bg);
+    border-bottom: 2px solid var(--quaternary-color);
+} 
+
+footer{
+    display:flex;
+    background-color:var(--secondary-color);
+    height: clamp(200px,35vh,500px);
+    width: 100%;
+    border-top: 2px solid var(--tertiary-color);
+}
