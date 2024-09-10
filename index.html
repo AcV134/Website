@@ -14,10 +14,58 @@
         </header>
     </section>
     <div class="break"></div>
-    <section></section>
+    <section>
+        <div class="bg">
+            <div class="blob one">
+                <div class="blobs yellow"></div>
+                <div class="blobs yellow"></div>
+            </div>
+            <div class="blob two">
+                <div class="blobs yellow"></div>
+                <div class="blobs yellow"></div>
+            </div>
+            <div class="blob three">
+                <div class="blobs violet"></div>
+                <div class="blobs violet"></div>
+            </div>
+            <div class="blob four">
+                <div class="blobs violet"></div>
+                <div class="blobs violet"></div>
+            </div>
+            <div class="blob five">
+                <div class="blobs violet"></div>
+                <div class="blobs violet"></div>
+            </div>
+            <div class="blob six">
+                <div class="blobs yellow"></div>
+                <div class="blobs yellow"></div>
+            </div>
+            <div class="blob seven">
+                <div class="blobs violet"></div>
+                <div class="blobs violet"></div>
+            </div>
+            <div class="blob eight">
+                <div class="blobs yellow"></div>
+                <div class="blobs yellow"></div>
+            </div>
+            <div class="blob nine">
+                <div class="blobs yellow"></div>
+                <div class="blobs yellow"></div>
+            </div>
+        </div>
+    </section>
     <div class="break"></div>
     <section></section>
     <footer></footer>
 </body>
 <script src="src/script.js"></script>
 </html>
+
+<svg>
+    <defs>
+        <filter id="blur-contrast">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="contrast" />
+          </filter>
+    </defs>
+</svg>
