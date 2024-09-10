@@ -1,0 +1,26 @@
+--root{
+    /* font-family */
+    --ff:"DM Sans", sans-serif;
+    /* colors */
+    --primary-color:white;
+    --secondary-color:black;
+    --tertiary-color:#9775fa;
+    --quaternary-color:#ffe066;
+    /* texts */
+    --h1:700 48px/1.2px var(--ff);
+    --h2:700 24px/1.2px var(--ff);
+    --h3:500 18px/1.2px var(--ff);
+    --h4:500 16px/1.2px var(--ff);
+    --h5:500 16px/1.9px var(--ff);
+    /* blobs */
+    --shadow1: -4px -4px 30 rgba(var(--primary-color),0.2), 4px 4px 4 rgba(var(--secondary-color),1);
+     /*cards  */
+    --shadow2:-4px -4px 40 rgba(var(--primary-color),0.12), 4px 4px 4 rgba(var(--secondary-color),1);
+    /* background */
+    --bg:rgba(25,25,25);
+    /* image cover */
+    --cover: rgba(var(--secondary-color),0.7);
+}
+
+
+
