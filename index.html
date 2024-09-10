@@ -3,9 +3,12 @@
 <head>
     <title>My Website</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
+    <section id="first">
         <div class="bg-image-container">
             <div class="bg-image first"></div>
             <div class="bg-image second"></div>
@@ -17,13 +20,16 @@
         </div>
         <div class="header">
             <div class="navbar">
-                <div class="logo"></div>
-                <div class="navbar-items"></div>
+                <div class="logo"><a href="#first">CodingWithAnirudh</a></div>
+                <div class="navbar-items">
+                    <div class="button"><a href="#second">About</a></div>
+                    <div class="button"><a href="#third">Project</a></div>
+                    <div class="button"><a href="#fourth">Contact</a></div>
+                </div>
             </div>
         </div>
     </section>
-    <div class="break"></div>
-    <section>
+    <section id="second">
         <div class="bg">
             <div class="blob one">
                 <div class="blobs yellow"></div>
@@ -75,13 +81,13 @@
         </div>
     </section>
     <div class="break"></div>
-    <section>
+    <section id="third">
         <div class="bg-container">
             <div class="bg-blob"></div>
             <div class="bg-blob blur"></div>
         </div>
     </section>
-    <footer>
+    <footer id="fourth">
         <div class="footer-icons">
             <!-- twitter -->
             <a href="https://x.com/321Anirudh" target="_blank" class="icon-link">

@@ -20,6 +20,7 @@
     --bg:rgb(25,25,25);
     /* image cover */
     --cover: rgba(0,0,0,0.6);
+    scroll-behavior: smooth;
 }
 
 svg{
@@ -31,16 +32,65 @@ body{
     padding: 0px;
     margin: 0px;
     background-color: var(--bg);
+    scroll-snap-type: y mandatory;
+
 }
 
 .header{
     display:flex;
-    background-color:transparent;
+    background-color: rgba(0,0,0,0.2);
+    align-items: center;
     height: 13vh;
     width: 100%;
     z-index: 1;
     border-bottom: 2px solid var(--quaternary-color);
     position: absolute;
+
+    .navbar{
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        padding: 0 10px;
+
+        .navbar-items{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 30%;
+
+            .button{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                color: var(--quaternary-color);
+                font: var(--h3);
+                padding: 10px 0;
+                transition: all 0.1s ease-in-out;
+            }
+
+            .button:hover{
+                border-bottom:3px solid var(--quaternary-color);
+            }
+        }
+
+        .logo{
+            display:flex;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+            color: var(--quaternary-color);
+            font: var(--h2);
+            border-bottom: 3px solid var(--quaternary-color);
+            margin-right:auto;
+        }
+
+        a{
+            text-decoration: none;
+            color: var(--quaternary-color);
+        }
+    }
 }
 
 section{
@@ -49,6 +99,7 @@ section{
     height: 130vh;
     width: 100%;
     overflow: hidden;
+    scroll-snap-align:start;
 }
 
 .bg-image-container{
@@ -79,17 +130,17 @@ section{
 
     .second{
         background-image: url('../img/2.jpg');
-        left: 100vw;
+        left: 1200vw;
     }
 
     .third{
         background-image: url('../img/3.jpg');
-        left: 200vw;
+        left: 100vw;
     }
 
     .fourth{
         background-image: url('../img/4.jpg');
-        left: 300vw;
+        left: 200vw;
     }
 
     .fifth{
@@ -99,7 +150,7 @@ section{
 
     .sixth{
         background-image: url('../img/6.jpg');
-        left: 400vw;
+        left: 300vw;
     }
 
     .seventh{
@@ -109,12 +160,12 @@ section{
 
     .eighth{
         background-image: url('../img/8.jpg');
-        left: 500vw;
+        left: 400vw;
     }
 
     .ninth{
         background-image: url('../img/9.jpg');
-        left: 600vw;
+        left: 500vw;
     }
 }
 
@@ -138,16 +189,16 @@ section{
         transform: translateX(-500vw);
     }
     60%{
-        transform: translateX(-600vw);
-    }
-    70%{
-        transform: translateX(-500vw);
-    }
-    80%{
         transform: translateX(-400vw);
     }
-    90%{
+    70%{
         transform: translateX(-300vw);
+    }
+    80%{
+        transform: translateX(-200vw);
+    }
+    90%{
+        transform: translateX(-100vw);
     }
     100%{
         transform: translateX(0vw);
@@ -158,7 +209,6 @@ section{
     height:30vh;
     width:100%;
     background-color: var(--bg);
-    border-bottom: 2px solid var(--quaternary-color);
 } 
 
 .bg{
