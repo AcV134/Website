@@ -5,13 +5,13 @@
     --primary-color:white;
     --secondary-color:black;
     --tertiary-color:#9775fa;
-    --quaternary-color:#ffe066;
+    --quaternary-color:rgb(255, 224, 102);
     /* texts */
     --h1:700 48px/1.2px var(--ff);
     --h2:700 24px/1.2px var(--ff);
     --h3:500 18px/1.2px var(--ff);
     --h4:500 16px/1.2px var(--ff);
-    --h5:500 16px/1.9px var(--ff);
+    --h5:550 16px/30.9px var(--ff);
     /* blobs */
     --shadow1: -1px -1px 0 var(--primary-color), 1px 1px 0 var(--secondary-color);
      /*cards  */
@@ -95,7 +95,7 @@ section{
     }
     .eight{
         top:50vh;
-        left:55vw;
+        left:48vw;
         rotate: 110deg;
     }
 
@@ -172,3 +172,34 @@ footer{
     filter:blur(40px);
     opacity: 0.7;
 }
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    padding: 0 5vw;
+
+    .card{
+        width:35vw;
+        padding: 20px;
+        color:var(--primary-color);
+        font: var(--h5);
+        border-radius: 20px;
+        background-color: rgba(0,0,0,0.64);
+        backdrop-filter: blur(35px);
+    }
+
+    .yellow{
+        box-shadow:0 0 20px var(--quaternary-color);
+    }
+
+    .violet{
+        box-shadow:0 0 25px var(--tertiary-color);
+        align-self: flex-end;
+    }
+}
+
+
