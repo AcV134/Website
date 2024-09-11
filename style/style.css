@@ -300,6 +300,11 @@ section{
     z-index: 1;
     transform-style: preserve-3d;
     transform:perspective(1000px);
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 .project {
@@ -340,11 +345,12 @@ section{
     }
 
     .video{
-        height: 100%;
-        width: 98%;
+        height: 21vh;
+        width: 28vh;
         border-radius: 20px;
         background-color: var(--bg);
         border:2px solid rgba(0,0,0,0.6);
+        object-fit: cover;
     }
 }
 
