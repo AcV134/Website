@@ -7,8 +7,8 @@
     --tertiary-color:#9775fa;
     --quaternary-color:rgb(255, 224, 102);
     /* texts */
-    --h1:700 48px/1.2px var(--ff);
-    --h2:700 24px/1.2px var(--ff);
+    --h1:700 48px/30.2px var(--ff);
+    --h2:500 14px/30.2px var(--ff);
     --h3:500 18px/1.2px var(--ff);
     --h4:500 12px/20.2px var(--ff);
     --h5:550 16px/30.9px var(--ff);
@@ -23,7 +23,7 @@
     scroll-behavior: smooth;
 }
 
-svg{
+.nodisp{
     display: none;
 }
 
@@ -81,7 +81,7 @@ body{
             justify-content: center;
             align-items: center;
             color: var(--quaternary-color);
-            font: var(--h2);
+            font: 700 24px/30.2px var(--ff);
             border-bottom: 3px solid var(--quaternary-color);
             margin-right:auto;
         }
@@ -100,6 +100,89 @@ section{
     width: 100%;
     overflow: hidden;
     scroll-snap-align:start;
+}
+
+.hero-content{
+    align-self: center;
+    margin-left:27vw;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color:var(--primary-color);
+    align-items: center;
+    justify-content: center;
+
+
+    .hero-title{
+        font: var(--h1);
+    }
+
+    .hero-web{
+        padding: 4px;
+        border-radius: 10px;
+        background-color: rgba(151, 117, 250, 0.8);
+        border: 2px solid rgba(255, 224, 102,0.7);
+    }
+
+    .hero-short{
+        font: var(--h5);
+        margin-top: 5vh;
+        color: var(--quaternary-color);
+    }
+
+    .hero-icon{
+        height: 25vh;
+        width: 25vh;
+
+        svg{
+            height: 100%;
+            width: 100%;
+            stroke: var(--quaternary-color);  
+
+            .onee{
+                animation: jump 2.5s infinite ease-in;
+                animation-delay: 0.2s;
+            }
+
+            .twoo{
+                animation: jump 2.5s infinite ease-in;
+                animation-delay: 0.4s;
+            }
+
+            .threee{
+                animation: jump 2.5s infinite ease-in;
+                animation-delay: 0.6s;
+            }
+
+            .fourr{
+                animation: jump 2.5s infinite ease-in;
+                animation-delay: 0.8s;
+            }
+        }
+    }
+}
+
+@keyframes jump{
+    0%{
+        stroke-width: 1.3px;
+        stroke: var(--quaternary-color);   
+    }
+    10%{
+        stroke-width: 2px;
+        stroke: var(--tertiary-color);  
+    }
+    20%{
+        stroke-width: 1px;
+        stroke: var(--tertiary-color);  
+    }
+    30%{
+        stroke-width: 1.3px;
+        stroke: var(--quaternary-color); 
+    }
+    100%{
+        stroke-width: 1.3px;
+        stroke: var(--quaternary-color); 
+    }
 }
 
 .bg-image-container{
